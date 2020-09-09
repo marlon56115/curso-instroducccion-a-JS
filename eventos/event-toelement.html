@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>evento del boton</title>
+    </head>
+
+    <body>
+        <button id="myBoton">dame clicck</button>
+
+        <script>
+            let boton = document.querySelector('#myBoton');
+            boton.addEventListener('mouseover', function alerta(evt) {
+                alert('me has dado cclick, gracias'+evt.type);
+            })
+        </script>
+    </body>
+
+</html>

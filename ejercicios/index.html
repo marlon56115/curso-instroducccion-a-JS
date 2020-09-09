@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicios</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="generarNumeronRandom();">
+    <header> <h1>ejercicios</h1></header>
+    <main>
+        <section id="ejercicio1"> 
+            <h2>resolver euacion cuadratica</h2>
+            <table>
+                <tr>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                </tr>
+                <tr>
+                    <td><input type="number" name="a" id="a"></td>
+                    <td><input type="number" name="b" id="b"></td>
+                    <td><input type="number" name="c" id="c"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input type="button" value="calcular" id="calcular" onclick="cuadratica();"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input type="text" value="respuesta" id="respuesta" ></td>
+                </tr>
+            </table>
+        </section>
+        <section id="random" >
+            <h2>Adivina el numero</h2>
+            <table>
+                <tr>
+                    <td>ingrese un numero entre 1 y 10:</td>
+                    <td><input type="number" name="numeo" id="numero"></td>
+                </tr>
+                <tr>
+                    <td ><input type="button" value="generar" id="generar" onclick="generarNumeronRandom();"></td>
+
+                    <td ><input type="button" value="adivinar" id="adivinar" onclick="adivinarNumero();"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" value="" id="resultado" ></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

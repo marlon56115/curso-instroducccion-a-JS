@@ -1,0 +1,15 @@
+tr,td{
+    position: relative;
+    margin: auto;
+    border: solid 1px;
+}
+table{
+    border-collapse: collapse;
+}
+
+section{
+    align-content: center;
+    width: 50%;
+    padding:10px;
+    margin: 10px 0px 10px ;
+}
